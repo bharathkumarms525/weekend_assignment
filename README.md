@@ -1,4 +1,4 @@
-# AI Document Processor
+# AI Document Summariser
 
 A FastAPI-based microservice that processes:
 - Uploaded PDF or Image files (extracts + summarizes content)
@@ -48,4 +48,24 @@ uvicorn main:app --reload
 - **Bold Section Headers**: Section titles are bolded for clarity.
 - **Bullet Points**: Key details are presented as bullet points.
 - **Structured Layout**: Clean and professional layout using ReportLab.
+
+## Project Structure
+```
+f:\weekend
+│
+├── app
+│   ├── api
+│   │   └── router.py          # FastAPI routes for handling requests
+│   ├── services
+│   │   ├── processor.py       # Handles file uploads and generates summaries
+│   │   └── url_processor.py   # Handles URL scraping and generates summaries
+│   ├── utils
+│       ├── ocr.py             # Extracts text from PDFs and images
+│       └── templates.py       # Renders HTML templates
+│          
+├── main.py                    # Entry point for the FastAPI application
+├── requirements.txt           # Python dependencies
+├── .env                       # Environment variables (e.g., GROQ_API_KEY)
+└── README.md                  # Project documentation
+```
 
