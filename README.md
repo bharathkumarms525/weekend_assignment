@@ -1,7 +1,7 @@
 # Document Summariser
 
 A FastAPI-based microservice that processes:
-- Uploaded PDF or Image files (extracts + summarizes content)
+- Uploaded PDF (extracts + summarizes content)
 - Web URLs (scrapes + summarizes content)
 
 Then generates a styled PDF report using Groq AI and ReportLab.
