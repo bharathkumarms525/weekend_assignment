@@ -1,4 +1,4 @@
-# AI Document Summariser
+# Document Summariser
 
 A FastAPI-based microservice that processes:
 - Uploaded PDF or Image files (extracts + summarizes content)
